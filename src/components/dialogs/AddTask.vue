@@ -13,10 +13,10 @@
 			:rules="rulesList"
 			>
 			<el-form-item label="Title" prop="title">
-				<el-input type="text" placeholder="Enter a title" v-model="todo.title" />
+				<el-input type="text" placeholder="Enter a title" v-model="todo.title" @keypress.enter="add(form)"/>
 			</el-form-item>
 			<el-form-item label="Text" prop="text">
-				<el-input type="text" placeholder="Enter a text" v-model="todo.text" />
+				<el-input type="text" placeholder="Enter a text" v-model="todo.text" @keypress.enter="add(form)"/>
 			</el-form-item>
 		</el-form>
 		<template #footer>

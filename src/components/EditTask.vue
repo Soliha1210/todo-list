@@ -19,13 +19,13 @@
 								:rules="rulesList"
 								>
 								<el-form-item prop="status">
-									<el-checkbox label="Complete"  v-model="todo.status"></el-checkbox>
+									<el-checkbox label="Complete"  v-model="todo.status" @keypress.enter="save(form)"></el-checkbox>
 								</el-form-item>
 								<el-form-item label="Title"  prop="title">
-									<el-input type="text" placeholder="Enter a title" v-model="todo.title"/>
+									<el-input type="text" placeholder="Enter a title" v-model="todo.title" @keypress.enter="save(form)"/>
 								</el-form-item>
 								<el-form-item label="Text" prop="text">
-									<el-input type="text" placeholder="Enter a text" v-model="todo.text"/>
+									<el-input type="text" placeholder="Enter a text" v-model="todo.text" @keypress.enter="save(form)"/>
 								</el-form-item>
 							</el-form>
 							<div class="edit__action">
