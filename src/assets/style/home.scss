@@ -1,0 +1,105 @@
+.home{
+    padding: 20px;
+    &__title{
+        text-align: center;
+        font-size: 30px;
+        font-family: 'r-b';
+    }
+    &__btn{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        .el-button{
+            background-color: rgb(80, 213, 162);
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+    }
+    &__card{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        box-shadow: rgba(0, 0, 0, 0.30) 0px 5px 10px;
+        margin-top: 20px;
+        border-radius: 8px;
+        
+    }
+    &__all{
+        display: flex;
+        align-items: baseline;
+        input{
+            margin-right: 5px;
+        }
+        
+    }
+    &__name{
+        font-size: 19px;
+        font-family: 'r-m';
+        margin-bottom: 10px;
+    }
+    .completed{
+        text-decoration: line-through;
+        color: gray;
+    }
+    &__complete{
+        .el-icon{
+            color: rgb(80, 213, 162);
+            font-family: 'r-b';
+            font-size: 20px;
+            margin-left: 10px;
+        }
+    }
+    &__text{
+        font-size: 16px;
+        color: gray;
+        font-family: 'r-r';
+    }
+    &__delete,
+    &__edit{
+        .el-button{
+            height: 30px;
+            width: 30px;
+        }
+        .el-icon{
+            font-size: 16px;
+        }
+    }
+    &__delete{
+        margin-top: 5px;
+        font-size: 18px;
+        font-family: 'r-r';
+    }
+    &__save{
+        
+        .el-icon{
+            margin-right: 5px;
+        }
+    }
+    
+    .el-dialog__title{
+        font-size: 20px;
+        font-family: 'r-m';
+    }
+    
+    .el-tabs{
+        margin-top: 20px;
+        &__item{
+            font-family: 'r-m';
+        }
+    }
+}
+.el-checkbox__label,
+.el-form-item__label{
+    font-family: 'r-r';
+    font-size: 15px;
+}
+.el-checkbox__inner{
+    height: 17px !important;
+    width: 17px !important;
+}
